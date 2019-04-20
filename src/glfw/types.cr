@@ -1,4 +1,4 @@
-lib LibGLFW
+lib Glfw
 
   #-- Structs --#
     

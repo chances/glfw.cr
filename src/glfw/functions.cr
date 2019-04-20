@@ -1,7 +1,7 @@
 require "./types"
 
 @[Link("glfw3")]
-lib LibGLFW
+lib Glfw
 
   # Initializes the GLFW library.
   #
