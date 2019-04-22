@@ -1,3 +1,4 @@
+require "vulkan"
 require "./types"
 
 @[Link("glfw3")]
@@ -579,20 +580,20 @@ lib Glfw
   
   # Returns the address of the specified Vulkan instance function.
   @[Raises]
-  fun get_instance_proc_address = glfwGetInstanceProcAddress(instance : Pointer(VkInstance),
+  fun get_instance_proc_address = glfwGetInstanceProcAddress(instance : Vk::Instance,
                                                              procname : Pointer(UInt8)) : VkProc
 
   # Returns whether the specified queue family can present images.
   @[Raises]
-  fun get_physical_device_presentation_support = glfwGetPhysicalDevicePresentationSupport(instance    : Pointer(VkInstance),
-                                                                                          device      : Pointer(VkPhysicalDevice),
+  fun get_physical_device_presentation_support = glfwGetPhysicalDevicePresentationSupport(instance    : Vk::Instance,
+                                                                                          device      : Vk::PhysicalDevice,
                                                                                           queuefamily : UInt32) : Int32
 
   # Creates a Vulkan surface for the specified window
   @[Raises]
-  fun create_window_surface = glfwCreateWindowSurface(instance  : Pointer(VkInstance),
+  fun create_window_surface = glfwCreateWindowSurface(instance  : Vk::Instance,
                                                       window    : Pointer(Window),
-                                                      allocator : Pointer(VkAllocationCallbacks),
-                                                      surface   : Pointer(VkSurfaceKHR)) : Pointer(VkResult)
+                                                      allocator : Pointer(Vk::AllocationCallbacks),
+                                                      surface   : Vk::SurfaceKHR) : Vk::Result
 
 end

@@ -71,21 +71,6 @@ lib Glfw
     # Opaque cursor object.
     alias Cursor                 = Void
 
-    # Opaque VkInstance object.
-    alias VkInstance             = Void
-
-    # Opaque VkPhysicalDevice object.
-    alias VkPhysicalDevice       = Void
-
-    # Opaque VkAllocationCallbacks object.
-    alias VkAllocationCallbacks  = Void
-
-    # Opaque VkSurfaceKHR object.
-    alias VkSurfaceKHR           = Void
-
-    # Opaque VkResult object.
-    alias VkResult               = Void
-
     # The function signature for error callbacks.
     alias Errorfun           = (Int32, Pointer(UInt8) -> Void)
 
