@@ -1,10 +1,10 @@
 name: glfw
-version: 0.1.0
+version: 0.2.0
 
 authors:
   - Caleb Uriah Harrison <calebuharrison@gmail.com>
 
-crystal: 0.22.0
+crystal: ">= 0.22.0, < 2.0"
 
 license: MIT
 
