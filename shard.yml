@@ -10,4 +10,5 @@ license: MIT
 
 dependencies:
   vulkan:
-    github: malte-v/vulkan.cr
+    github: chances/vulkan.cr
+    branch: upgrade-crystal
